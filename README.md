@@ -7,7 +7,7 @@ Less-Real has a database of more than 10,000 anime quotes which is crowd-sourced
 ## How To Use
 
 ```js
-var Quotes = require('anime-quotes');
+var Quotes = require('anime-quotes-api');
 
 (async function() {
 var quote = new Quotes();
@@ -48,7 +48,7 @@ Which gives the following results (only 5 results at one time),
 
 ## Installation
 
-`npm i anime-quotes --save`
+`npm i anime-quotes-api --save`
 
 ### Requirements
 
