@@ -1,0 +1,31 @@
+{
+  "name": "anime-quotes-api",
+  "version": "1.0.0",
+  "description": "An API wrapper which fetches random anime quotes from Less-Real",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjannair/anime-quotes-api.git"
+  },
+  "funding": "https://ko-fi.com/anjannair",
+  "keywords": [
+    "anime",
+    "quotes",
+    "less-real",
+    "anime quotes"
+  ],
+  "author": "Anjan Nair",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/anjannair/anime-quotes-api/issues"
+  },
+  "homepage": "https://github.com/anjannair/anime-quotes-api#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
