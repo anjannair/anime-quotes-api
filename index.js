@@ -14,6 +14,8 @@ module.exports = class Quote {
       //Checks if the quote is found
 
       let found = false;
+      let image;
+      let tags;
 
       /*
       Why these random values are being considered?
@@ -35,10 +37,17 @@ module.exports = class Quote {
 
       //Gets the quote
       var quote = await $('div[class = "quoteBig"]').text();
-
-      var image = await $('img')[1].attribs.src;
-
-      image= "https://www.less-real.com"+image;
+      try{
+      image = "https://www.less-real.com" + await $('img')[1].attribs.src;
+      }catch(err){
+        image = '';
+      }
+      try{
+      tags = await $('img')[1].attribs.alt.split(',');
+      tags = tags.map(s => s.trim());
+      }catch(err){
+        tags = '';
+      }
 
       //Checks if quote
       if (quote) found = true;
@@ -48,7 +57,8 @@ module.exports = class Quote {
         "success": found,
         "title": title[0].trim(),
         "quote": quote,
-        "image": image
+        "image": image,
+        "tags": tags
       });
       count++;
     }
