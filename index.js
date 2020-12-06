@@ -36,6 +36,10 @@ module.exports = class Quote {
       //Gets the quote
       var quote = await $('div[class = "quoteBig"]').text();
 
+      var image = await $('img')[1].attribs.src;
+
+      image= "https://www.less-real.com"+image;
+
       //Checks if quote
       if (quote) found = true;
 
@@ -44,6 +48,7 @@ module.exports = class Quote {
         "success": found,
         "title": title[0].trim(),
         "quote": quote,
+        "image": image
       });
       count++;
     }

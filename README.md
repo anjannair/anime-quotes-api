@@ -2,7 +2,7 @@
 An NPM package to fetch anime quotes from the website [Less-Real](https://www.less-real.com/)
 
 # How this API is different from the others?
-Less-Real has a database of more than 10,000 anime quotes which is crowd-sourced. Every time you fetch the API it will give a quote and the source of the quote at the same time, outputted in a JSON format.
+Less-Real has a database of more than 10,000 anime quotes which is crowd-sourced. Every time you fetch the API it will give a quote and the source of the quote at the same time, outputted in a JSON format. This API even gives related images which you can use.
 
 ## How To Use
 
@@ -20,26 +20,35 @@ Which gives the following results (only 5 results at one time),
 
 ```js
 [
-  { success: false, title: 'TV Quote #827', quote: '' },
   {
     success: true,
-    title: 'Kojirou Quote #2513',
-    quote: "Team Rocket may be dirty rotten criminals, but we're not in the business of destroying children's dreams! At least, not yet.- Kojirou (Pokémon)"      
+    title: 'Haku Quote #1955',
+    quote: 'I am of no more use as his tool. Please, kill me.- Haku (Naruto)',
+    image: 'https://www.less-real.com/imagevault/uploaded/images/part1/2765.jpg'
   },
   {
     success: true,
-    title: 'Portgas D. Ace Quote #5435',
-    quote: "Old man, everyone!! And you.. Luffy. Even though I've been good for nothing my whole life, even though I have the blood of a demon within me... You guys still loved me! Thank you so much!!- Portgas D. Ace (One Piece)"
+    title: 'Takashi Morinozuka Quote #3621',
+    quote: "It was my fault. It was my carelessness that led to Mitsukuni's cavity. I forgot to tell him to brush his teeth before napping... twice.- Takashi Morinozuka (Ouran High School Host Club)",
+    image: 'https://www.less-real.com/imagevault/uploaded/images/part1/2770.jpg'
   },
   {
     success: true,
-    title: 'Asakura Ryouko Quote #1325',
-    quote: "You think it's a joke? Huh. You don't want to die? You don't want me to kill you? I'm sorry, but I just don't understand the concept of death regarding organic lifeforms.- Asakura Ryouko (The Melancholy of Haruhi Suzumiya)"
+    title: 'Joey Wheeler Quote #2792',
+    quote: 'I coulda been a contendah...- Joey Wheeler (Yu-Gi-Oh!)',
+    image: 'https://www.less-real.com/imagevault/uploaded/images/part1/2045.jpg'
   },
   {
     success: true,
-    title: 'Haruhi Fujioka Quote #3608',
-    quote: 'I hate all these damn rich people.- Haruhi Fujioka (Ouran High School Host Club)'
+    title: 'Shihouin Yoruichi Quote #1922',
+    quote: "Do you remember the first time you walked? No. So you weren't conscious of it. Then why did you walk? Everyone was born knowing how to walk. It's called instinct. That's what this boy reminds me of. He knows he can achieve bankai, so he continues.- Shihouin Yoruichi (Bleach)",
+    image: 'https://www.less-real.com/imagevault/uploaded/images/part1/1145.jpg'
+  },
+  {
+    success: true,
+    title: 'Gaara Quote #1948',
+    quote: "I took the life of the woman I was supposed to call mother in the process of being born... in order to become the world's strongest shinobi... I became the incarnation of sand...- Gaara (Naruto)",
+    image: 'https://www.less-real.com/imagevault/uploaded/images/part2/5758.jpg'
   }
 ]
 ```
